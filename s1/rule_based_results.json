@@ -1,0 +1,127 @@
+{
+  "n_companies": 9494,
+  "n_assigned_any": 9386,
+  "n_unassigned": 108,
+  "top_labels": [
+    [
+      "Gas Manufacturing Services",
+      8537
+    ],
+    [
+      "Tent Manufacturing Services",
+      8537
+    ],
+    [
+      "Carpet Manufacturing Services",
+      8534
+    ],
+    [
+      "Textile Manufacturing Services",
+      8528
+    ],
+    [
+      "HVAC Installation and Service",
+      8108
+    ],
+    [
+      "Testing and Inspection Services",
+      8022
+    ],
+    [
+      "Fishing and Hunting Services",
+      8007
+    ],
+    [
+      "Air Duct Cleaning Services",
+      7805
+    ],
+    [
+      "Ice Production Services",
+      7457
+    ],
+    [
+      "Window and Door Manufacturing",
+      6968
+    ],
+    [
+      "Oil and Fat Manufacturing",
+      6951
+    ],
+    [
+      "Paper Production Services",
+      6857
+    ],
+    [
+      "Ink Production Services",
+      6856
+    ],
+    [
+      "Rope Production Services",
+      6844
+    ],
+    [
+      "Roofing Services with Heat Application",
+      6819
+    ],
+    [
+      "Media Production Services",
+      6818
+    ],
+    [
+      "Soap Production Services",
+      6802
+    ],
+    [
+      "Dairy Production Services",
+      6796
+    ],
+    [
+      "Bakery Production Services",
+      6787
+    ],
+    [
+      "Asphalt Production Services",
+      6780
+    ],
+    [
+      "Fire Safety Equipment Services",
+      6741
+    ],
+    [
+      "Agricultural Equipment Services",
+      6735
+    ],
+    [
+      "Food Processing Services",
+      6684
+    ],
+    [
+      "Food Safety Services",
+      6680
+    ],
+    [
+      "Fire Protection System Services",
+      6652
+    ],
+    [
+      "Business Development Services",
+      6645
+    ],
+    [
+      "Mobile Home Construction Services",
+      6615
+    ],
+    [
+      "Quality Assurance Services",
+      6606
+    ],
+    [
+      "Software Development Services",
+      6578
+    ],
+    [
+      "Website Development Services",
+      6577
+    ]
+  ]
+}

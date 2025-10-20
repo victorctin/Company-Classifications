@@ -1,0 +1,126 @@
+{
+  "n_companies": 9494,
+  "n_assigned_any": 4785,
+  "top_labels": [
+    [
+      "Gas Manufacturing Services",
+      478
+    ],
+    [
+      "Accessory Manufacturing",
+      442
+    ],
+    [
+      "Apparel Manufacturing",
+      382
+    ],
+    [
+      "Textile Manufacturing Services",
+      337
+    ],
+    [
+      "Agricultural Equipment Services",
+      325
+    ],
+    [
+      "Furniture Manufacturing",
+      306
+    ],
+    [
+      "Cabinetry Manufacturing",
+      285
+    ],
+    [
+      "Commercial Construction Services",
+      276
+    ],
+    [
+      "Food Processing Services",
+      271
+    ],
+    [
+      "E-Commerce Services",
+      261
+    ],
+    [
+      "Bakery Production Services",
+      252
+    ],
+    [
+      "Marketing Services",
+      241
+    ],
+    [
+      "Carpet Manufacturing Services",
+      233
+    ],
+    [
+      "Tent Manufacturing Services",
+      233
+    ],
+    [
+      "Meat Processing Services",
+      231
+    ],
+    [
+      "Corporate Responsibility Services",
+      229
+    ],
+    [
+      "Wood Product Manufacturing",
+      221
+    ],
+    [
+      "Livestock Dealer Services",
+      207
+    ],
+    [
+      "Welding Services",
+      203
+    ],
+    [
+      "Industrial Plumbing Services",
+      184
+    ],
+    [
+      "Dairy Production Services",
+      177
+    ],
+    [
+      "Digital Marketing Services",
+      173
+    ],
+    [
+      "Chemical Manufacturing",
+      165
+    ],
+    [
+      "Well Maintenance Services",
+      155
+    ],
+    [
+      "Road Maintenance Services",
+      151
+    ],
+    [
+      "Pipeline Construction Services",
+      151
+    ],
+    [
+      "Software Manufacturing",
+      149
+    ],
+    [
+      "Real Estate Services",
+      147
+    ],
+    [
+      "Gardening Services",
+      145
+    ],
+    [
+      "Commercial Renovation Services",
+      145
+    ]
+  ]
+}

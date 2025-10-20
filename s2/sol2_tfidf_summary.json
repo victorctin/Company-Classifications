@@ -1,0 +1,126 @@
+{
+  "n_companies": 9494,
+  "n_assigned_any": 1971,
+  "top_labels": [
+    [
+      "Real Estate Services",
+      73
+    ],
+    [
+      "Consulting Services",
+      68
+    ],
+    [
+      "Insurance Services",
+      55
+    ],
+    [
+      "Non-Profit Management",
+      54
+    ],
+    [
+      "Printing Services",
+      53
+    ],
+    [
+      "Waste Management Services",
+      53
+    ],
+    [
+      "Furniture Manufacturing",
+      49
+    ],
+    [
+      "Sports Management Services",
+      47
+    ],
+    [
+      "Boiler Repair Services",
+      46
+    ],
+    [
+      "Well Maintenance Services",
+      46
+    ],
+    [
+      "Financial Services",
+      44
+    ],
+    [
+      "Interior Design Services",
+      43
+    ],
+    [
+      "Masonry Construction Services",
+      43
+    ],
+    [
+      "Fencing Construction Services",
+      40
+    ],
+    [
+      "Software Development Services",
+      39
+    ],
+    [
+      "Cable Installation Services",
+      38
+    ],
+    [
+      "Graphic Design Services",
+      37
+    ],
+    [
+      "Training Services",
+      37
+    ],
+    [
+      "Software Manufacturing",
+      36
+    ],
+    [
+      "Project Management Services",
+      35
+    ],
+    [
+      "Tank Installation Services",
+      35
+    ],
+    [
+      "Flooring Installation Services",
+      33
+    ],
+    [
+      "Event Planning Services",
+      33
+    ],
+    [
+      "Legal Services",
+      31
+    ],
+    [
+      "Plastic Manufacturing",
+      31
+    ],
+    [
+      "Property Management Services",
+      30
+    ],
+    [
+      "Animal Training Services",
+      29
+    ],
+    [
+      "Sidewalk Construction Services",
+      26
+    ],
+    [
+      "Painting Services",
+      26
+    ],
+    [
+      "Data Analysis Services",
+      26
+    ]
+  ]
+}

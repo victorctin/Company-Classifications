@@ -1,0 +1,68 @@
+Lets say you are expert Machine Learning (ML) & Deep Learning (DL) AI Engineer and got this task: 
+
+Build a robust company classifier for a new insurance taxonomy. 
+
+Objectives: 
+
+Accept a list of companies with associated data:
+– Company Description
+– Business Tags
+– Sector, Category, Niche Classification
+
+Receive a static taxonomy (a list of labels) relevant to the insurance industry.
+Build a solution that accurately classifies these companies, and any similar ones, into one or more labels from the static taxonomy.
+Present your results and demonstrate effectiveness.
+
+Guidelines:
+
+Since this is an unsolved problem without a predefined ground truth, you’ll need to validate your classifier’s performance through your own methods.
+
+Analyze strengths and weaknesses:
+Explain where your solution excels and where it may need improvement.
+Discuss scalability and how your solution performs with large datasets.
+Reflect on any assumptions made and unknown factors that could impact your solution.
+
+Ensure your solution truly addresses the problem
+
+Focus on solving the actual problem, not just implementing complex algorithms. Using embeddings, zero-shot models, TF-IDF, clustering, or other techniques is meaningless if companies are misclassified due to a flawed approach. A well-designed solution is more important than an impressive algorithm.
+Your evaluation should demonstrate that your solution effectively addresses the problem. Simply plotting similarity scores or reporting F1 and accuracy metrics without meaningful validation only measures alignment with your own heuristic, not real-world effectiveness.
+Take the time to deeply understand the problem before writing code. Even the most sophisticated solution is ineffective if it solves the wrong problem. Misalignment in problem definition leads to incorrect conclusions and wasted effort.
+
+Provide insights into your problem-solving process:
+
+Why you did what you did, what other paths you considered, and especially why you chose not to pursue them.
+
+
+
+Please provide me 3 best/top solutions including python code and details/explanations. If u have any question please ask.
+
+
+
+
+==========================================
+
+Am ales o abordare rule-based pentru Soluția 1. Am prioritat interpretabilitatea și viteză de implementare. Am început prin a analiza datele disponibile. Am identificat trei surse de semnale: Company Description, Business Tags și Sector. Am creat seeduri pentru fiecare etichetă din taxonomie. Când lipsesc seedurile, am extras cuvinte cheie din denumirea etichetei. Am decis un sistem de scor simplu. Termenul găsit în Business Tags valorează 3 puncte. Termenul găsit în Description valorează 1 punct. Termenul găsit în Sector valorează 2 puncte. Am ales pragul 2 pentru atribuirea unei etichete. Motivația fiecărei alegeri este următoarea.
+
+Rule-based pentru ca reguli simple oferă audit imediat. Fiecare decizie rămâne explicabilă. Echipa de business poate revizui seedurile. Corectările se aplică rapid. Costul de pornire rămâne mic. Am putut genera imediat etichete slabe pentru pașii următori.
+
+Scoruri diferite pentru ca Business Tags provin din date structurate. Am considerat acele taguri ca semnale puternice. Prin urmare le-am dat greutate mai mare. Description este text liber. Acolo apar mențiuni accidentale. Am dat greutate mai redusă. Sector oferă semnal intermediar. Am setat o greutate medie.
+
+Pragul 2 asigură că o mențiune unică în Description nu declanșează etichetarea. Pragul permite însă combinarea semnalelor. Exemplu concret. Dacă un termen apare în Description și în Sector atunci suma 1 + 2 = 3 trece pragul. Dacă apare doar în Business Tags 3 trece pragul. Această regulă reduce etichetele false pozitive din cauza cuvintelor comune.
+
+Am curățat textul, am eliminat semnele nonalfanumerice și spațiile în exces. Am construit maparea termeni la etichete. Am parcurs fiecare companie și am calculat scorurile. Am salvat atribuțiile în CSV și JSON. Am înregistrat companiile fără etichete. Am extras top etichete cele mai frecvent atribuite. Am identificat companii incert etichetate, adică scor maxim sub 2 sau fără scoruri.
+
+Am produs etichete pentru setul existent. Am salvat fișierele rule_based_assigned.csv și rule_based_results.json. Pentru fiecare companie am păstrat scorurile pe etichetă. Aceasta permite audit complet. Putem identifica exact termenii care au influențat decizia.
+
+Aceasta solutie, prima solutie excelează la transparenta. Fiecare etichetă are explicație ușor de urmărit. Implementare rapidă. Se rulează offline, fără GPU. Corecțiile se aplică manual fără retraining. Util pentru etape inițiale. Bună pentru audit și pentru generare de weak labels.
+
+Dar aceasta prima solutie are si limitary ca de exemplu sensibilitate la sinonime.  Dacă seedurile nu includ variante, nu prindem mențiunile. Expresiile compuse sau inversate pot rata potrivirea. Cuvinte comune pot genera zgomot. Clasele rare rămân subreprezentate. Textul scurt sau lipsa Business Tags generează multe companii neetichetate.
+
+Posibile errori de exemplu apar la false positives când un termen generic apare în Description dar contextul nu indică relevanță de business. De exemplu cuvântul "service" poate apărea în zeci de companii. Sistemul îl va corela cu etichete dacă seedul conține "service".
+La false negatives când sinonime sau abrevieri lipsesc din seeds. De exemplu seed "automotive" nu prinde "auto", "autos" sau "carrozzeria".
+In context invers cand Description menționează competențe non-core, de tipul "colaborează cu asiguratori", sistemul poate eticheta greșit compania ca asigurător.
+
+Business Tags curate cresc acuratețea. Lipsește normalizare în Business Tags duce la fragmentare. Descrierile foarte scurte reduc semnalul. Date multilingve necesită extindere de seeduri multilingve.
+
+Etichete manuale pentru un dev set de 300 de companii. Foloosirea de metrics ca precision, recall, F1/pe eticheta si ca verificare optionala average precision si precision pe etiucheta 1 si un raport de eroare fp/fn de 20.
+
+In concluzie am asumat că taxonomia rămâne stabilă. Am asumat că Business Tags au semnificație consistentă. Am asumat că descrierile conțin suficiente semnale pentru majoritatea companiilor. Putem folosi solutia 1 ca prim strat de etichetare și ca instrument de audit.
